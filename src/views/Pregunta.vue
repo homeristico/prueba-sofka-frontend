@@ -85,7 +85,7 @@ export default {
             
             try {
                 
-                const res = await fetch('http://168.138.233.89/api/categoria/'+id);
+                const res = await fetch('http://localhost/api/categoria/'+id);
                 const datos = await res.json();                
                 pregunta.value = datos;
                 
@@ -102,7 +102,7 @@ export default {
             
 
             try {
-                const res = await fetch('http://168.138.233.89/api/historico/save',{
+                const res = await fetch('http://localhost/api/historico/save',{
                     method:'POST',
                     mode:'cors',
                     headers:{

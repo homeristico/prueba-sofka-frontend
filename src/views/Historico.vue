@@ -37,7 +37,7 @@ export default {
         const cargarHistorico = async () => {
 
             try {
-                const res = await fetch('http://168.138.233.89/api/historico/all');  
+                const res = await fetch('http://localhost/api/historico/all');  
                 const datos = await res.json();
                 arregloHistorico.value = datos;
                 
